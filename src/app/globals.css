@@ -23,7 +23,7 @@
     } */
 }
 body {
-  cursor: url("../assets/pointer.png"), auto;
+  cursor: url("/assets/pointer.png"), auto;
 }
 .boat {
   offset-path: path(

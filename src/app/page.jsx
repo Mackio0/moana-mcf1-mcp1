@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Container from "./components/Container";
-import Button from "./components/Button";
-import GradientText from "./components/GradientText";
-import FaqSection from "./components/FaqSection";
+import Container from "@/components/Container";
+import Button from "@/components/Button";
+import GradientText from "@/components/GradientText";
+import FaqSection from "@/components/FaqSection";
 
 export default function page() {
   const scenes = [
@@ -223,7 +223,7 @@ export default function page() {
             {/* Decorative Wave */}
             <div className="absolute -right-20 top-10 w-72 h-72 -z-10">
               <Image
-                src={"/assets/moana_home/bg-wave.png"}
+                src="/assets/moana_home/bg-wave.png"
                 alt="Wave"
                 width={400}
                 height={400}
@@ -233,7 +233,7 @@ export default function page() {
           </div>
           <div className="absolute -right-56 top-0 w-72 h-72 -z-10">
             <Image
-              src={"/assets/moana_home/Flower.png"}
+              src="/assets/moana_home/Flower.png"
               alt="Flower"
               width={80}
               height={80}
@@ -251,7 +251,7 @@ export default function page() {
         <div className="relative w-full h-[540px] overflow-hidden">
           {/* Background Image */}
           <Image
-            src={"/assets/moana_home/movie-trailer-bg.png"}
+            src="/assets/moana_home/movie-trailer-bg.png"
             alt="Trailer background"
             layout="fill"
             objectFit="cover"
@@ -266,7 +266,7 @@ export default function page() {
             <div className="absolute left-40 top-[360px] -translate-y-1/2 w-[360px]">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                 <Image
-                  src={"/assets/moana_home/trailer.png"}
+                  src="/assets/moana_home/trailer.png"
                   alt="Ocean scene"
                   fill
                   className="object-cover"
