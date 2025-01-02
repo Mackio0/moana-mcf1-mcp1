@@ -9,8 +9,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-roboto)", "serif"],
-        subrayada: ["var(--font-monsterrat)", "serif"],
-        leckerli: ["var(--font-leckerli)", "sans-serif"],
+        subrayada: ["var(--font-monsterrat)" , "serif"],
+        leckerli: ["var(--font-leckerli)" , "sans-serif"],
       },
       fontSize: {
         "6xl": "64px",

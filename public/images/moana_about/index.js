@@ -8,7 +8,6 @@ export { default as NG } from "./partners/NG.png";
 export { default as StarWars } from "./partners/StarWars700.png"
 export { default as Journey } from "./journey.png"
 export { default as quote } from "./quote.png"
-
 export { default as character1 } from "./character1.jpg"
 export { default as character2 } from "./character2.jpg"
 export { default as character3 } from "./character3.jpg"
