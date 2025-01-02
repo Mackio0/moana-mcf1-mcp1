@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "serif"],
-        subrayada: ["Montserrat Subrayada", "serif"],
-        leckerli: ["Leckerli One", "serif"],
+        sans: ["var(--font-roboto)", "serif"],
+        subrayada: ["var(--font-monsterrat)", "serif"],
+        leckerli: ["var(--font-leckerli)", "sans-serif"],
       },
       fontSize: {
         "6xl": "64px",

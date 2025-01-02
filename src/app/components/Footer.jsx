@@ -8,7 +8,7 @@ import { usePathname } from "next/navigation";
 
 function Footer() {
   const pathname = usePathname();
-  //   console.log(pathname)
+
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about-us" },
