@@ -11,7 +11,7 @@ const GradientText = ({
     <HeadingTag
       className={`${className} ${
         outline
-          ? "text-transparent bg-clip-text stroke-current text-stroke-sm"
+          ? "text-transparent  bg-clip-text stroke-current text-stroke-sm"
           : ""
       }`}
     >
@@ -19,7 +19,7 @@ const GradientText = ({
         className={` ${
           outline
             ? ""
-            : "text-transparent bg-clip-text bg-gradient-to-b from-primary to-secondary-500"
+            : "text-transparent leading-9 bg-clip-text bg-gradient-to-b from-primary to-secondary-500"
         }`}
       >
         {children}
