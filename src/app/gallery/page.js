@@ -1,14 +1,19 @@
 import Container from "../components/Container";
-import GradientText from "../components/GradientText";
+import bgGallery from "../../assets/moana_gallery/gallery-hero.png";
+import HeroSection from "../components/HeroSection";
+import GalleryMovieScence from "../components/GalleryMovieScence";
+import GalleryOST from "../components/GalleryOST";
+import GalleryFanArt from "../components/GalleryFanArt";
 
 export default function Page() {
-    return (
-      <main>
-        <Container>
-          <GradientText className={"font-bold text-6xl font-subrayada"} heading={2}>
-            Gallery
-          </GradientText>
-        </Container>
-      </main>
-    );
-  }
+  return (
+    <main>
+      <HeroSection image={bgGallery} title={"Gallery"} />
+      <Container>
+        <GalleryMovieScence />
+        <GalleryOST />
+        {/* <GalleryFanArt /> */}
+      </Container>
+    </main>
+  );
+}

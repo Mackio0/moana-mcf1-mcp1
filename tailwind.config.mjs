@@ -49,6 +49,9 @@ export default {
           DEFAULT: "#042031",
         },
       },
+      backgroundImage: {
+        gallery: "url('/src/assets/moana_gallery/gallery-hero.png')",
+      },
       spacing: {
         "section-spacing": "40px", // use as className="mb-section-spacing" or "mt-section-spacing"
       },
