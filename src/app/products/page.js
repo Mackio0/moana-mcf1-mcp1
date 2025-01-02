@@ -1,14 +1,24 @@
+
 import Container from "../components/Container";
-import GradientText from "../components/GradientText";
+import AdventureToy from "./components/AdventureToy";
+import CalenderSection from "./components/CalenderSection";
+import HeroSection from "./components/HeroSection";
+import PencilGame from "./components/PencilGame";
+import SelfCare from "./components/SelfCare";
+import WeeklyPlanner from "./components/WeeklyPlanner";
+import slides from "./data/data";
 
 export default function Page() {
-    return (
-      <main>
-        <Container>
-          <GradientText className={"font-bold text-6xl font-subrayada"} heading={2}>
-            Products
-          </GradientText>
-        </Container>
-      </main>
-    );
-  }
+
+  return <main>
+    <HeroSection/>
+    <Container className={`flex flex-col gap-[80px]`}>
+    
+    <AdventureToy slides={slides}/>
+    <WeeklyPlanner/>
+    <CalenderSection/>
+    <PencilGame/>
+    <SelfCare/>
+    </Container>
+  </main>
+}
