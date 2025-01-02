@@ -1,11 +1,11 @@
 import React from "react";
-import logo from "../../assets/logo.png";
+
 import Image from "next/image";
 
 const Logo = ({ className }) => {
   return (
     <>
-      <Image src={logo} alt="Moana Logo" className={className} priority={true} />
+      <Image src={"/assets/logo.png"} width={152} height={55} alt="Moana Logo" className={className} />
     </>
   );
 };
