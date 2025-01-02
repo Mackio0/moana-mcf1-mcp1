@@ -1,3 +1,4 @@
+import SimpleSlider from "@/components/SliderComponent";
 import Container from "./components/Container";
 
 export default function page() {
@@ -5,6 +6,7 @@ export default function page() {
     <div>
       <Container>
         <h1>Home</h1>
+
       </Container>
     </div>
   );
