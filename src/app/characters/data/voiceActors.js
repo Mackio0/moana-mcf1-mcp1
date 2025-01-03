@@ -1,10 +1,10 @@
 
-import image1 from '../../../assets/moana_character/Voice_actor/image-1.png';
-import image2 from '../../../assets/moana_character/Voice_actor/image-2.png';
-import image3 from '../../../assets/moana_character/Voice_actor/image-3.png';
-import image4 from '../../../assets/moana_character/Voice_actor/image-4.png';
-import image5 from '../../../assets/moana_character/Voice_actor/image-5.png';
-import image6 from '../../../assets/moana_character/Voice_actor/image-6.png';
+import image1 from '../../../../public/assets/moana_character/Voice_actor/image-1.png';
+import image2 from '../../../../public/assets/moana_character/Voice_actor/image-2.png';
+import image3 from '../../../../public/assets/moana_character/Voice_actor/image-3.png';
+import image4 from '../../../../public/assets/moana_character/Voice_actor/image-4.png';
+import image5 from '../../../../public/assets/moana_character/Voice_actor/image-5.png';
+import image6 from '../../../../public/assets/moana_character/Voice_actor/image-6.png';
 
 
 

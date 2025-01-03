@@ -1,5 +1,6 @@
-import Container from "../components/Container";
-import GradientText from "../components/GradientText";
+
+import Container from "@/components/Container";
+
 import Characters from "./components/Characters";
 import HeroSection from "./components/HeroSection";
 

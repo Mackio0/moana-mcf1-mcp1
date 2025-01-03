@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import HeroSectionImage from "../../../assets/moana_character/HeroSection.png"
+import HeroSectionImage from "../../../../public/assets/moana_character/HeroSection.png"
+
 import MoanaSailBoat from './MoanaSailBoat'
 import Link from 'next/link'
 

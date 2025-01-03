@@ -4,9 +4,9 @@
 // import { Input } from "@/components/ui/input"
 import { Download } from 'lucide-react'
 import Image from 'next/image'
-import planner1 from '../../../assets/moana_products/weekly-planner/planner-1.png'
-import planner2 from '../../../assets/moana_products/weekly-planner/planner-2.png'
-import planner3 from '../../../assets/moana_products/weekly-planner/planner-3.png'
+import planner1 from '../../../../public/assets/moana_products/weekly-planner/planner-1.png'
+import planner2 from '../../../../public/assets/moana_products/weekly-planner/planner-2.png'
+import planner3 from '../../../../public/assets/moana_products/weekly-planner/planner-3.png'
 import ProductButton from './ProductButton'
 import { handleDownload } from '../actions/dowloadfile'
 

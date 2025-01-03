@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image"
-import pencilGame1 from "../../../assets/moana_products/pencil-game/pencil-game-1.png"
-import pencilGame2 from "../../../assets/moana_products/pencil-game/pencil-game-2.png"
+import pencilGame1 from "../../../../public/assets/moana_products/pencil-game/pencil-game-1.png"
+import pencilGame2 from "../../../../public/assets/moana_products/pencil-game/pencil-game-2.png"
 
 
 // import { div, div, div, h2 } from "@/components/ui/div"

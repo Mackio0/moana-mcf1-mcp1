@@ -1,5 +1,6 @@
 
-import Container from "../components/Container";
+
+import Container from "@/components/Container";
 import AdventureToy from "./components/AdventureToy";
 import CalenderSection from "./components/CalenderSection";
 import HeroSection from "./components/HeroSection";

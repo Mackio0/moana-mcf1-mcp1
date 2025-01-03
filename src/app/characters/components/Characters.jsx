@@ -4,9 +4,9 @@ import { ArrowLeft, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import { useState } from "react"
 import CharacterButton from "./CharacterButton"
-import characterImage from '../../../assets/moana_character/character-bg.png'
-import UnderWave from '../../../assets/moana_character/under-wave.png'
-import Sun from '../../../assets/moana_character/sun.png'
+import characterImage from '../../../../public/assets/moana_character/character-bg.png'
+import UnderWave from '../../../../public/assets/moana_character/under-wave.png'
+import Sun from '../../../../public/assets/moana_character/sun.png'
 
 
 export default  function Characters({ data }) {

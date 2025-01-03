@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react'
-import starFish from '../../../assets/moana_products/starfish.png'
+import starFish from '../../../../public/assets/moana_products/starfish.png'
 import ProductButton from './ProductButton'
 import { handleDownload } from '../actions/dowloadfile'
 import Link from 'next/link'
