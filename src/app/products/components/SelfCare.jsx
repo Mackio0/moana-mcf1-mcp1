@@ -1,6 +1,6 @@
 'use client'
-import selfCare1 from "../../../assets/moana_products/self-care/self-care-1.png"
-import selfCare2 from "../../../assets/moana_products/self-care/self-care-2.png"
+import selfCare1 from "../../../../public/assets/moana_products/self-care/self-care-1.png"
+import selfCare2 from "../../../../public/assets/moana_products/self-care/self-care-2.png"
 import Image from 'next/image'
 import { ArrowRight, Download } from 'lucide-react'
 import ProductButton from "./ProductButton"

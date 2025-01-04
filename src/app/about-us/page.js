@@ -1,18 +1,19 @@
 import HeroSection from "@/components/HeroSection";
+
 import LogoSlider from "@/components/LogoSlider";
 import { abc, character1, character2, character3, disney, espn, FX, Hulu, marvel, NG, quote, StarWars, aboutHero, Director1, Director2, Director3, Director4 } from "../../../public/images/moana_about";
 import Container from "@/components/Container";
 import GradientText from "@/components/GradientText";
 import Image from "next/image";
+
 import JourneyMap from "@/components/JourneyMap";
 import { Star } from "lucide-react";
 import SliderComponent from "@/components/SliderComponent";
 import MoanaSailBoat from "../characters/components/MoanaSailBoat";
 import FollowUsBtnGroup from "@/components/FollowUsBtnGroup";
 
-
-
 export default function AboutPage() {
+
   const directors = [
     {
       image: Director1,
@@ -40,9 +41,9 @@ export default function AboutPage() {
     },
   ]
 
+
   return (
     <>
-
       <main>
         <div className=" relative">
           <HeroSection image={aboutHero} title="About Us" />
@@ -50,108 +51,137 @@ export default function AboutPage() {
         </div>
 
         <Container className=" grid grid-cols-12 gap-x-5 gap-y-10 items-start">
-          <LogoSlider images={[{
-            title: "abc",
-            src: abc
-          },
-          {
-            title: "disney",
-            src: disney
-          },
-          {
-            title: "espn",
-            src: espn
-          },
-          {
-            title: "FX",
-            src: FX
-          }, {
-            title: "Hulu",
-            src: Hulu
-          }, {
-            title: "Marvel",
-            src: marvel
-          }, {
-            title: "NG",
-            src: NG
-          }, {
-            title: "StarWars",
-            src: StarWars
-          },
-
-
-          ]} />
+          <LogoSlider
+            images={[
+              {
+                title: "abc",
+                src: abc,
+              },
+              {
+                title: "disney",
+                src: disney,
+              },
+              {
+                title: "espn",
+                src: espn,
+              },
+              {
+                title: "FX",
+                src: FX,
+              },
+              {
+                title: "Hulu",
+                src: Hulu,
+              },
+              {
+                title: "Marvel",
+                src: marvel,
+              },
+              {
+                title: "NG",
+                src: NG,
+              },
+              {
+                title: "StarWars",
+                src: StarWars,
+              },
+            ]}
+          />
 
           <div className=" col-span-6    flex flex-col gap-5">
-            <GradientText className=" text-3xl font-leckerli ">  Commercial success
+            <GradientText className=" text-3xl font-leckerli ">
+              Commercial success
             </GradientText>
             <div className="flex flex-col gap-3">
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">Worldwide box office </h1>
-                <p className="font-base text-secondary-700"> Over $643 million, with $248 million from domestic (U.S.) markets and $395 million internationally.Ranked as one of Disney’s highest-grossing animated films of all time.</p>
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  Worldwide box office
+                </h1>
+                <p className="font-base text-secondary-700">
+                  Over $643 million, with $248 million from domestic (U.S.)
+                  markets and $395 million internationally.Ranked as one of
+                  Disney’s highest-grossing animated films of all time.
+                </p>
               </div>
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">Streaming  popularity</h1>
-                <p className=" text-base text-secondary-700"> One of Disney's most-watched films, accumulating over 1 billion hours of viewership from 2020 to 2023.Upon its release on Disney+, Moana quickly became one of the platform’s most-watched titles, attracting new audiences.</p>
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  Streaming popularity
+                </h1>
+                <p className=" text-base text-secondary-700">
+                  One of Disney's most-watched films, accumulating over 1
+                  billion hours of viewership from 2020 to 2023.Upon its release
+                  on Disney+, Moana quickly became one of the platform’s
+                  most-watched titles, attracting new audiences.
+                </p>
               </div>
             </div>
           </div>
           <div className=" col-span-6  ">
-
             <Image
               src="/images/moana_about/achievement1.png"
               alt="Picture of the author"
-
               className="w-full"
-
               width={639}
               height={334}
             />
           </div>
           <div className=" col-span-6  ">
-            <Image className=" w-full object-cover rounded "
+            <Image
+              className=" w-full object-cover rounded "
               layout="responsive"
-
-
               alt="Moana-movie-celebaration"
               width={639}
               height={336}
               src="/images/moana_about/achievement.png"
-              priority={true} />
-
+              priority={true}
+            />
           </div>
           <div className=" col-span-6    flex flex-col gap-5">
-            <GradientText className=" text-3xl font-leckerli ">  Awards And nomination
+            <GradientText className=" text-3xl font-leckerli ">
+              Awards And nomination
             </GradientText>
             <div className="flex flex-col gap-1">
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">Academy awards </h1>
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  Academy awards
+                </h1>
                 <div className="font-base text-secondary-700">
                   <p className="font-sans whitespace-normal ">
                     Nominated for Best Animated Feature.
-
                   </p>
                   <p>Nominated for Best Original Song ("How Far I'll Go").</p>
                 </div>
               </div>
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">golden globes</h1>
-                <div>       <p className=" text-base text-secondary-700"> Nominated for Best Motion Picture – Animated.
-                </p>
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  golden globes
+                </h1>
+                <div>
                   <p className=" text-base text-secondary-700">
-                    Nominated for Best Original Song ("How Far I'll Go")</p></div>
+                    Nominated for Best Motion Picture – Animated.
+                  </p>
+                  <p className=" text-base text-secondary-700">
+                    Nominated for Best Original Song ("How Far I'll Go")
+                  </p>
+                </div>
               </div>
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">Annie awards</h1>
-                <p className=" text-base text-secondary-700"> Received multiple nominations, including Outstanding Achievement in Animation.
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  Annie awards
+                </h1>
+                <p className=" text-base text-secondary-700">
+                  Received multiple nominations, including Outstanding
+                  Achievement in Animation.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">Critics choice movie awards</h1>
-                <p className=" text-base text-secondary-700">Nominated for Best Animated Feature.
+                <h1 className=" text-xl leading-6  font-medium  text-secondary-900">
+                  Critics choice movie awards
+                </h1>
+                <p className=" text-base text-secondary-700">
+                  Nominated for Best Animated Feature.
                 </p>
-
               </div>
             </div>
           </div>
@@ -166,11 +196,12 @@ export default function AboutPage() {
         <Container className=" grid grid-cols-12 gap-x-5 gap-y-10 items-start">
 
           <div className=" col-span-full">
-            <GradientText className=" text-5xl font-subrayada  text-center" >
+            <GradientText className=" text-5xl font-subrayada  text-center">
               Making of the Movie
             </GradientText>
           </div>
           <div className=" col-span-full ">
+
             <SliderComponent bottomControls={false}
               leftRightControls={true} infinite={false} >
               <div className=" p-1  w-[560px] h-[315px] ">
@@ -180,17 +211,6 @@ export default function AboutPage() {
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <div className=" p-1  w-[560px] h-[315px] ">
-                <iframe
-                  className=" w-full h-full"
-                  src="https://www.youtube.com/embed/rB5MpMDMpas?si=g3Rj1o-xWULckHV2"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  frameBorder="1"
                   allowFullScreen
                 ></iframe>
               </div>
@@ -251,53 +271,75 @@ export default function AboutPage() {
           <div className=" col-span-5 self-stretch col-start-2 flex items-center justify-center">
 
             <JourneyMap className=" h-full  " />
-
-
           </div>
           <div className="col-span-6 space-y-5">
             <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Call to Adventure
               </GradientText>
-              <p className=" text-base text-secondary-700">Learns she is chosen to restore Te Fiti’s heart and save her island.</p>
+              <p className=" text-base text-secondary-700">
+                Learns she is chosen to restore Te Fiti’s heart and save her
+                island.
+              </p>
             </div>
             <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Departure
               </GradientText>
-              <p className=" text-base text-secondary-700">Defies her father’s restrictions and sets sail beyond the reef.</p>
-            </div>       <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <p className=" text-base text-secondary-700">
+                Defies her father’s restrictions and sets sail beyond the reef.
+              </p>
+            </div>
+            <div className=" space-y-1">
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Meeting Maui
               </GradientText>
-              <p className=" text-base text-secondary-700">Convinces the demigod Maui to join her mission despite his initial reluctance..</p>
-            </div>       <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <p className=" text-base text-secondary-700">
+                Convinces the demigod Maui to join her mission despite his
+                initial reluctance..
+              </p>
+            </div>
+            <div className=" space-y-1">
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Challenges:
               </GradientText>
-              <p className=" text-base text-secondary-700">Faces battles with Kakamora pirates and retrieves Maui’s fishhook from Tamatoa.</p>
-            </div>       <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <p className=" text-base text-secondary-700">
+                Faces battles with Kakamora pirates and retrieves Maui’s
+                fishhook from Tamatoa.
+              </p>
+            </div>
+            <div className=" space-y-1">
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Growth
               </GradientText>
-              <p className=" text-base text-secondary-700">Learns wayfinding and discovers her inner strength.</p>
-            </div>       <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <p className=" text-base text-secondary-700">
+                Learns wayfinding and discovers her inner strength.
+              </p>
+            </div>
+            <div className=" space-y-1">
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Climactic Confrontation
               </GradientText>
-              <p className=" text-base text-secondary-700">Realizes Te Kā is Te Fiti without her heart and restores it, healing the world.</p>
-            </div>       <div className=" space-y-1">
-              <GradientText className="font-subrayada text-2xl  " heading="2"  >
+              <p className=" text-base text-secondary-700">
+                Realizes Te Kā is Te Fiti without her heart and restores it,
+                healing the world.
+              </p>
+            </div>
+            <div className=" space-y-1">
+              <GradientText className="font-subrayada text-2xl  " heading="2">
                 Return Home:
               </GradientText>
-              <p className=" text-base text-secondary-700">Inspires her people to embrace voyaging and becomes their leader.</p>
+              <p className=" text-base text-secondary-700">
+                Inspires her people to embrace voyaging and becomes their
+                leader.
+              </p>
             </div>
-
           </div>
 
-          <GradientText className=" col-span-full text-5xl font-subrayada" >
+          <GradientText className=" col-span-full text-5xl font-subrayada">
             Critics Review
           </GradientText>
+
           <div className=" col-span-full ">
             <SliderComponent bottomControls={true} leftRightControls={false} >
               <div className=" px-1 mt-24 ">
@@ -333,6 +375,8 @@ export default function AboutPage() {
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
+
+        
                   </div>
 
                 </div>
@@ -364,14 +408,17 @@ export default function AboutPage() {
                   </div>
 
 
+
                   <div className="flex justify-around py-5 ">
                     <p>May 4, 2023</p>
+
 
                     <div className=" flex gap-1">
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
                   </div>
+
 
                 </div>
               </div>
@@ -409,6 +456,7 @@ export default function AboutPage() {
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
+
                   </div>
 
                 </div>
@@ -439,14 +487,17 @@ export default function AboutPage() {
                   </div>
 
 
+
                   <div className="flex justify-around py-5 ">
                     <p>May 4, 2023</p>
+
 
                     <div className=" flex gap-1">
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
                   </div>
+
 
                 </div>
               </div>
@@ -484,6 +535,7 @@ export default function AboutPage() {
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
+
                   </div>
 
                 </div>
@@ -515,25 +567,21 @@ export default function AboutPage() {
                   </div>
 
 
+
                   <div className="flex justify-around py-5 ">
                     <p>May 4, 2023</p>
+
 
                     <div className=" flex gap-1">
                       <Star size={16} color="#FDA520" />
                       <span>4/5</span>
                     </div>
                   </div>
-
-                </div>
+   </div>
               </div>
-
             </SliderComponent>
-
-
-
-
-
           </div>
+
           {directors.map((director, index) => <div key={index} className=" my-section-spacing col-span-3 flex flex-col gap-4 ">
             <div className="">
               <Image src={director.image} height={360} width={305} alt={director.name} className=" w-full object-cover object-center " />
@@ -550,13 +598,8 @@ export default function AboutPage() {
 
 
 
-
-
-
         </Container>
-
-
-      </main >
+      </main>
     </>
   );
 }

@@ -1,7 +1,7 @@
-import toy1 from '../../../assets/moana_products/Moana-toys/toy-1.png'
-import toy2 from '../../../assets/moana_products/Moana-toys/toy-2.png'
-import toy3 from '../../../assets/moana_products/Moana-toys/toy-3.png'
-import toy4 from '../../../assets/moana_products/Moana-toys/toy-4.png'
+import toy1 from '../../../../public/assets/moana_products/Moana-toys/toy-1.png'
+import toy2 from '../../../../public/assets/moana_products/Moana-toys/toy-2.png'
+import toy3 from '../../../../public/assets/moana_products/Moana-toys/toy-3.png'
+import toy4 from '../../../../public/assets/moana_products/Moana-toys/toy-4.png'
  
  
  

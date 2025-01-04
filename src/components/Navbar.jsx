@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="flex items-center justify-between">
       <div className="text-xl font-bold">
         <Link href="/">
-          <Logo className="cursor-pointer w-[152px] h-[55px] object-cover" />
+          <Logo className="cursor-pointer w-[81px] h-[29px] lg:w-[152px] lg:h-[55px] object-cover" />
         </Link>
       </div>
 
