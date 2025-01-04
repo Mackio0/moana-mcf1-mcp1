@@ -22,7 +22,7 @@ const TrailerSection = () => {
         />
 
         {/* Content Overlay */}
-        <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col h-[400px]">
+        <div className="md:absolute static inset-0 p-4 sm:p-6 md:p-8 flex flex-col">
           {/* Mobile Layout */}
           <div className="flex flex-col space-y-4 md:hidden ">
             {/* Info Card */}
