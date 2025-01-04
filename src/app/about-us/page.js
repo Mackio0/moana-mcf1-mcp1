@@ -1,27 +1,54 @@
 import HeroSection from "@/components/HeroSection";
-import aboutHero from "../../../public/images/moana_about/hero.png"
-
 import LogoSlider from "@/components/LogoSlider";
-import { abc, character1, character2, character3, disney, espn, FX, Hulu, marvel, NG, quote, StarWars, } from "../../../public/images/moana_about";
-import Container from "@/app/components/Container";
-import GradientText from "../components/GradientText";
+import { abc, character1, character2, character3, disney, espn, FX, Hulu, marvel, NG, quote, StarWars, aboutHero, Director1, Director2, Director3, Director4 } from "../../../public/images/moana_about";
+import Container from "@/components/Container";
+import GradientText from "@/components/GradientText";
 import Image from "next/image";
-
-
 import JourneyMap from "@/components/JourneyMap";
 import { Star } from "lucide-react";
 import SliderComponent from "@/components/SliderComponent";
+import MoanaSailBoat from "../characters/components/MoanaSailBoat";
+import FollowUsBtnGroup from "@/components/FollowUsBtnGroup";
 
 
 
 export default function AboutPage() {
+  const directors = [
+    {
+      image: Director1,
 
+      name: "Ron Clements",
+      roles: "Animator, Director, Screenwriter"
+    },
+    {
+      image: Director2,
+
+      name: "John Musker",
+      roles: "Animator, Director, Screenwriter"
+    },
+    {
+      image: Director3,
+
+      name: "Jared Bush",
+      roles: "Screenwriter, Director, Producer"
+    },
+    {
+      image: Director4,
+
+      name: "Taika Waititi",
+      roles: " Director, Screenwriter, Actor"
+    },
+  ]
 
   return (
     <>
 
       <main>
-        <HeroSection image={aboutHero} title="About Us" />
+        <div className=" relative">
+          <HeroSection image={aboutHero} title="About Us" />
+          <MoanaSailBoat styleName="absolute -bottom-5 left-0" />
+        </div>
+
         <Container className=" grid grid-cols-12 gap-x-5 gap-y-10 items-start">
           <LogoSlider images={[{
             title: "abc",
@@ -78,7 +105,7 @@ export default function AboutPage() {
               className="w-full"
 
               width={639}
-              height={334} 
+              height={334}
             />
           </div>
           <div className=" col-span-6  ">
@@ -128,6 +155,16 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+        </Container>
+
+        <div className=" w-screen my-section-spacing  ">
+          <MoanaSailBoat rtl={true} />
+        </div>
+
+
+
+        <Container className=" grid grid-cols-12 gap-x-5 gap-y-10 items-start">
+
           <div className=" col-span-full">
             <GradientText className=" text-5xl font-subrayada  text-center" >
               Making of the Movie
@@ -135,7 +172,17 @@ export default function AboutPage() {
           </div>
           <div className=" col-span-full ">
             <SliderComponent bottomControls={false}
-              leftRightControls={true} >
+              leftRightControls={true} infinite={false} >
+              <div className=" p-1  w-[560px] h-[315px] ">
+                <iframe
+                  className=" w-full h-full"
+                  src="https://www.youtube.com/embed/iqEcsbm3SHQ?si=xPHdv6VADuF3ilWL"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
               <div className=" p-1  w-[560px] h-[315px] ">
                 <iframe
                   className=" w-full h-full"
@@ -188,15 +235,24 @@ export default function AboutPage() {
                   allowFullScreen
                 ></iframe>
               </div>
+              <div className=" p-1  w-[560px] h-[315px] ">
+                <iframe
+                  className=" w-full h-full"
+                  src="https://www.youtube.com/embed/iqEcsbm3SHQ?si=xPHdv6VADuF3ilWL"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              </div>
+
             </SliderComponent>
           </div>
-          <div className=" col-span-6 flex justify-center p-5 items-center">
-            <div className="relative w-[90%] h-auto  " >
-              <JourneyMap />
-              <div className="absolute top-20 left-20  boat">
-                <Image alt=" boat " width="79" height="97" src="/images/animation/boat.png" />
-              </div>
-            </div>
+          <div className=" col-span-5 self-stretch col-start-2 flex items-center justify-center">
+
+            <JourneyMap className=" h-full  " />
+
+
           </div>
           <div className="col-span-6 space-y-5">
             <div className=" space-y-1">
@@ -242,112 +298,233 @@ export default function AboutPage() {
           <GradientText className=" col-span-full text-5xl font-subrayada" >
             Critics Review
           </GradientText>
-          <div className=" col-span-full mt-24 grid grid-cols-12 gap-5">
+          <div className=" col-span-full ">
             <SliderComponent bottomControls={true} leftRightControls={false} >
-              <div className=" col-span-4 p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
-                <div className=" w-full -mt-24 ">
-                  <Image src={character1} alt="user1" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+              <div className=" px-1 mt-24 ">
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character1} alt="user1" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+                  </div>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
+
+
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+
+                    </div>
+                  </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
                 </div>
-                <div className=" mt-5 ">
-                  <div className=" inline-block w-full">
-                    <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
-                  </div>
-                  <div className="space-y-2">
-                    <GradientText className=" text-center  font-leckerli " heading="3">
-                      Victoria Luxford
-                    </GradientText>
-                    <p>
-                      Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
-                    </p>
-
-
-                  </div>
-                  <div className=" inline-block w-full ">
-                    <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
-
-                  </div>
-                </div>
-
-
-                <div className="flex justify-around py-5 ">
-                  <p>May 4, 2023</p>
-
-                  <div className=" flex gap-1">
-                    <Star size={16} color="#FDA520" />
-                    <span>4/5</span>
-                  </div>
-                </div>
-
               </div>
-              <div className=" col-span-4 p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
-                <div className=" w-full -mt-24 ">
-                  <Image src={character2} alt="user2" className="border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+              <div className=" px-1 mt-24 ">
+
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character2} alt="user2" className="border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+                  </div>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
+
+
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+
+                    </div>
+                  </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
                 </div>
-                <div className=" mt-5 ">
-                  <div className=" inline-block w-full">
-                    <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
-                  </div>
-                  <div className="space-y-2">
-                    <GradientText className=" text-center  font-leckerli " heading="3">
-                      Victoria Luxford
-                    </GradientText>
-                    <p>
-                      Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
-                    </p>
-
-
-                  </div>
-                  <div className=" inline-block w-full ">
-                    <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
-
-                  </div>
-                </div>
-
-
-                <div className="flex justify-around py-5 ">
-                  <p>May 4, 2023</p>
-
-                  <div className=" flex gap-1">
-                    <Star size={16} color="#FDA520" />
-                    <span>4/5</span>
-                  </div>
-                </div>
-
               </div>
-              <div className=" col-span-4 p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
-                <div className=" w-full -mt-24 ">
-                  <Image src={character3} alt="user3" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+              <div className=" px-1 mt-24 ">
+
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character3} alt="user3" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+                  </div>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
+
+
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+
+                    </div>
+                  </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
                 </div>
-                <div className=" mt-5 ">
-                  <div className=" inline-block w-full">
-                    <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+              </div>
+              <div className=" px-1 mt-24 ">
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character1} alt="user1" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
                   </div>
-                  <div className="space-y-2">
-                    <GradientText className=" text-center  font-leckerli " heading="3">
-                      Victoria Luxford
-                    </GradientText>
-                    <p>
-                      Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
-                    </p>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
 
 
-                  </div>
-                  <div className=" inline-block w-full ">
-                    <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
 
+                    </div>
                   </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
                 </div>
+              </div>
+              <div className=" px-1 mt-24 ">
 
-
-                <div className="flex justify-around py-5 ">
-                  <p>May 4, 2023</p>
-
-                  <div className=" flex gap-1">
-                    <Star size={16} color="#FDA520" />
-                    <span>4/5</span>
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character2} alt="user2" className="border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
                   </div>
-                </div>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
 
+
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+
+                    </div>
+                  </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div className=" px-1 mt-24 ">
+
+                <div className="  p-5 relative border border-gray-500 bg-[#f5f5f5] rounded flex flex-col gap-5">
+                  <div className=" w-full -mt-24 ">
+                    <Image src={character3} alt="user3" className=" border-2 border-primary-700 rounded-full mx-auto" width={150} height={150} />
+                  </div>
+                  <div className=" mt-5 ">
+                    <div className=" inline-block w-full">
+                      <Image className=" mr-auto" src={quote} height={26} width={22} alt="quote" />
+                    </div>
+                    <div className="space-y-2">
+                      <GradientText className=" text-center  font-leckerli " heading="3">
+                        Victoria Luxford
+                      </GradientText>
+                      <p>
+                        Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery.
+                      </p>
+
+
+                    </div>
+                    <div className=" inline-block w-full ">
+                      <Image className=" rotate-180 ml-auto" src={quote} height={26} width={22} alt="quote" />
+
+                    </div>
+                  </div>
+
+
+                  <div className="flex justify-around py-5 ">
+                    <p>May 4, 2023</p>
+
+                    <div className=" flex gap-1">
+                      <Star size={16} color="#FDA520" />
+                      <span>4/5</span>
+                    </div>
+                  </div>
+
+                </div>
               </div>
 
             </SliderComponent>
@@ -357,6 +534,24 @@ export default function AboutPage() {
 
 
           </div>
+          {directors.map((director, index) => <div key={index} className=" my-section-spacing col-span-3 flex flex-col gap-4 ">
+            <div className="">
+              <Image src={director.image} height={360} width={305} alt={director.name} className=" w-full object-cover object-center " />
+              <div className=" icon-group -mt-6">
+                <FollowUsBtnGroup />
+
+              </div>
+            </div>
+            <div>
+              <h1 className=" text-3xl text-center text-secondary-900 font-bold ">{director.name}</h1>
+              <p className=" text-secondary-800 text-center ">{director.roles}</p>
+            </div>
+          </div>)}
+
+
+
+
+
 
         </Container>
 
