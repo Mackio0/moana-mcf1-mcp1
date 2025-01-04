@@ -44,3 +44,9 @@ body {
     offset-distance: 100%;
   }
 }
+
+@layer components {
+  .home-header {
+    @apply font-subrayada text-xl md:text-3xl text-center font-semibold;
+  }
+}
