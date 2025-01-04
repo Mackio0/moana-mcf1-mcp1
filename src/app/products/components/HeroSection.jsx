@@ -1,5 +1,5 @@
 import MoanaSailBoat from "@/app/characters/components/MoanaSailBoat"
-import HeroSectionImage from '../../../assets/moana_products/product-hero.png'
+import HeroSectionImage from '../../../../public/assets/moana_products/product-hero.png'
 import Image from "next/image"
 import Link from "next/link"
 const HeroSection = () => {
