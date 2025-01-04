@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import GradientText from "@/components/GradientText";
-import AudioPlayer from "react-audio-player";
+
 import MusicPlayer from "./MusicPlayer";
 
 const GalleryOST = () => {

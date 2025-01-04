@@ -50,7 +50,7 @@ const GalleryFanArt = () => {
         dots={true}
         slideCount={isMobileOrTablet ? 1 : 3}
         scrollCount={isMobileOrTablet ? 1 : 2}
-        className={"border border-primary"}
+        className={"border md:border-none border-primary"}
       >
         {fanArts.map((fanArt, index) => (
           <div key={index} className="p-5">

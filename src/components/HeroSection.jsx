@@ -1,6 +1,7 @@
 import React from "react";
 import GradientText from "./GradientText";
 import Image from "next/image";
+import MoanaSailBoat from "@/app/gallery/components/MoanaSailBoat";
 
 const HeroSection = ({ image, title }) => {
 
@@ -11,7 +12,11 @@ const HeroSection = ({ image, title }) => {
         <GradientText className={"text-sm lg:text-5xl font-leckerli"}>
           {title}
         </GradientText>
+
       </div>
+      <div className=' absolute z-20 w-full bottom-[60px] transform translate-y-1/2'>
+                                <MoanaSailBoat/>
+                            </div>
     </div>
   );
 };
