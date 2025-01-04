@@ -3,7 +3,7 @@ import FollowUsBtn from "./FollowUsBtn";
 
 const FollowUsBtnGroup = () => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 justify-center items-center">
       <FollowUsBtn
         icon={
           <svg
