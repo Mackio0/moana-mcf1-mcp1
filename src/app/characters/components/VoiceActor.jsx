@@ -10,9 +10,9 @@ const VoiceActor = ({actors}) => {
            Voice Actors
           </GradientText>
       <div className=' w-full grid-cols-3 grid gap-20'>
-        {actors.map((actor)=>
+        {actors.map((actor, index)=>
        (
-        <div className='  flex flex-col gap-2 justify-center items-center '>
+        <div key={index} className='  flex flex-col gap-2 justify-center items-center '>
             <Image
                          src={actor.image}
                          alt="Moana Adventure Doll"

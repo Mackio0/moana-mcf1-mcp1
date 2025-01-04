@@ -47,7 +47,6 @@ export default function AboutPage() {
       <main>
         <div className=" relative">
           <HeroSection image={aboutHero} title="About Us" />
-          <MoanaSailBoat styleName="absolute -bottom-5 left-0" />
         </div>
 
         <Container className=" grid grid-cols-12 gap-x-5 gap-y-10 items-start">
@@ -376,7 +375,7 @@ export default function AboutPage() {
                       <span>4/5</span>
                     </div>
 
-        
+
                   </div>
 
                 </div>
@@ -577,7 +576,7 @@ export default function AboutPage() {
                       <span>4/5</span>
                     </div>
                   </div>
-   </div>
+                </div>
               </div>
             </SliderComponent>
           </div>

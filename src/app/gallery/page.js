@@ -11,19 +11,19 @@ export default function Page() {
   return (
     <main className="flex flex-col gap-[40px] ">
       <HeroSection image={bgGallery} title={"Gallery"} className />
-    
+
       <Container>
         <GalleryMovieScence />
-        </Container>
-        <div className='  z-20 w-full '>
-                                <MoanaSailBoatRight/>
-                            </div>
-                            
-                            <Container>
+      </Container>
+      <div className='  z-20 w-full '>
+        <MoanaSailBoatRight />
+      </div>
+
+      <Container>
         <GalleryOST />
         <GalleryFanArt />
-        </Container>
-      
+      </Container>
+
     </main>
   );
 }

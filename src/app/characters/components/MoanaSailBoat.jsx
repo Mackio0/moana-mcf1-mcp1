@@ -1,6 +1,6 @@
 import React from "react";
 
-const MoanaSailBoat = ({ styleName, rtl = false }) => {
+const MoanaSailBoat = ({ styleName, rtl = false  }) => {
   return (
 
     <>
