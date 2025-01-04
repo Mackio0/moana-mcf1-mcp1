@@ -1,8 +1,8 @@
 
-import image1 from '../../../assets/moana_character/characters/moana.png';
-import image2 from '../../../assets/moana_character/characters/maui.png';
-import image3 from '../../../assets/moana_character/characters/cock.png';
-import image4 from '../../../assets/moana_character/characters/pig.png';
+import image1 from '../../../../public/assets/moana_character/characters/moana.png';
+import image2 from '../../../../public/assets/moana_character/characters/maui.png';
+import image3 from '../../../../public/assets/moana_character/characters/cock.png';
+import image4 from '../../../../public/assets/moana_character/characters/pig.png';
 
 
 export const characterData = [

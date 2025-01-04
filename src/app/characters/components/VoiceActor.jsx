@@ -1,7 +1,7 @@
+import GradientText from '@/components/GradientText'
 import Image from 'next/image'
 import React from 'react'
 
-import GradientText from '@/app/components/GradientText';
 const VoiceActor = ({actors}) => {
 
   return (
