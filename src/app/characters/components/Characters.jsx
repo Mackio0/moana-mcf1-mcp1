@@ -1,3 +1,4 @@
+
 'use client'
 
 import { ArrowLeft, ArrowRight } from 'lucide-react'
@@ -140,6 +141,6 @@ export default function Characters({ data }) {
         </motion.div>
       </AnimatePresence>
     </motion.main>
+    
   );
 }
-
