@@ -1,14 +1,16 @@
 import Image from "next/image";
 import React from "react";
 
-const PartnerLogo = ({ image }) => {
+const PartnerLogo = ({ partner }) => {
   return (
-    <div className=" ml-5 h-[100px] ">
+    <div
+      className=" lg:h-[100px] h-12 sm:h-16 md:h-20 "
+    >
       <Image
-        className=" h-full "
+        className=" h-full  object-contain  "
         height="100"
-        alt={image.title}
-        src={image.src}
+        alt={partner.title}
+        src={partner.src}
       />
     </div>
   );

@@ -17,4 +17,5 @@ export {default as Director1 } from "./Directors/director.png"
 export {default as Director2 } from "./Directors/director2.png"
 export {default as Director3 } from "./Directors/director3.png"
 export {default as Director4 } from "./Directors/director4.png"
+export {default as CommercialBG } from "./about-bg.png"
 

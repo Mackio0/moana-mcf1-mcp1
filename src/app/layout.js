@@ -14,7 +14,7 @@ const montserrat = Montserrat_Subrayada({
   subsets: ["latin"],
   variable: "--font-monsterrat",
 });
-const roboto = Roboto({
+const roboto =Roboto({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-roboto",
@@ -24,13 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${Leckerli.variable} ${montserrat.variable} ${roboto.variable}`}
+      className={`${Leckerli.variable} ${roboto.variable} ${montserrat.variable} `}
     >
       <body>
         <main className="flex flex-col min-h-screen">
-          <Header />
+          {/* <Header /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </main>
       </body>
     </html>
