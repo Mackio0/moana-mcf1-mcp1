@@ -1,3 +1,4 @@
+
 import HeroSection from "@/components/HeroSection";
 import LogoSlider from "@/components/LogoSlider";
 import { character1, character2, character3, aboutHero } from "../../../public/images/moana_about";
@@ -119,7 +120,7 @@ export default function AboutPage() {
           </SliderComponent>
         </div>
 
-        <DirectorGroup  />
+        <DirectorGroup />
 
 
 
@@ -128,3 +129,16 @@ export default function AboutPage() {
     </>
   );
 }
+
+import { EmblaCarousel } from '@/components/EmblaSlider'
+// import React from 'react'
+
+// const page = () => {
+//   const SLIDES = Array.from(Array(5).keys())
+//   const OPTIONS = { loop: true }
+//   return (
+//     <EmblaCarousel options={OPTIONS} slides={SLIDES} />
+//   )
+// }
+
+// export default page
