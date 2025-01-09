@@ -129,16 +129,3 @@ export default function AboutPage() {
     </>
   );
 }
-
-import { EmblaCarousel } from '@/components/EmblaSlider'
-// import React from 'react'
-
-// const page = () => {
-//   const SLIDES = Array.from(Array(5).keys())
-//   const OPTIONS = { loop: true }
-//   return (
-//     <EmblaCarousel options={OPTIONS} slides={SLIDES} />
-//   )
-// }
-
-// export default page

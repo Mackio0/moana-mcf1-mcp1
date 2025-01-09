@@ -1,7 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import "./globals.css";
-import './embla.css'
+
 import { Leckerli_One, Montserrat_Subrayada, Roboto } from "next/font/google";
 
 const Leckerli = Leckerli_One({
