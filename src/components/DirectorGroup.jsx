@@ -10,7 +10,7 @@ const DirectorGroup = () => {
       {directors.map((director, index) => (
         <div
           key={index}
-          className="  md:my-section-spacing md:col-span-4 mb-5  col-span-2 lg:col-span-3 flex flex-col gap-4 "
+          className="  md:my-section-spacing md:col-span-4 mb-5 lg:mb-20 col-span-2 lg:col-span-3 flex flex-col gap-4 "
         >
           <div className="">
             <Image
@@ -20,7 +20,7 @@ const DirectorGroup = () => {
               alt={director.name}
               className=" w-full object-cover object-center "
             />
-            <div className=" icon-group -mt-4 md:-mt-6 px-2">
+            <div className=" icon-group -mt-4 md:-mt-5 px-2">
               <FollowUsBtnGroup />
             </div>
           </div>

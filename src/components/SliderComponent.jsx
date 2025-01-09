@@ -1,6 +1,5 @@
 "use client";
 import dynamic from "next/dynamic";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React, { useRef } from "react";
@@ -13,13 +12,14 @@ import {
 
 const Slider = dynamic(() => import("react-slick") , {ssr : false})
 
+
 const SliderComponent = ({
   children,
   infinite = true,
   bottomControls = false,
   leftRightControls = true,
-  slideCount = 3 ,
-  scrollCount = 2 ,
+  slideCount = 3,
+  scrollCount = 2,
   dots = false,
   className,
 }) => {
@@ -108,12 +108,12 @@ const SliderComponent = ({
           refSlider = slider;
         }}
         {...settings}
-        className={`relative overflow-hidden ${className}`} 
+        className={`relative overflow-hidden ${className}`}
       >
         {children}
       </Slider>
       {bottomControls && (
-        <div className=" flex gap-5  items-center justify-center mt-6">
+        <div className=" flex gap-5  items-center justify-center mt-3 sm:mt-5 lg:mt-10 md:mt-6">
           <button
             className="button hover:bg-gradient-to-br active:scale-95  from-primary to-secondary-500 text-secondary-800 left border border-secondary-700 rounded-full size-10  flex justify-center items-center   "
             onClick={previous}
