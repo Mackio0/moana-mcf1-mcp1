@@ -5,13 +5,13 @@ import MoanaSailBoat from "@/app/gallery/components/MoanaSailBoat";
 
 const HeroSection = ({ image, title }) => {
   return (
-    <div className="relative lg:w-screen md:mb-10">
+    <div className="relative lg:w-screen md:mb-10 mb-5 lg:mb-20">
       <Image
         src={image}
         alt={title}
         width={1140}
         height={547}
-        className=" w-full h-full object-contain "
+        className=" w-full h-auto object-contain "
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <GradientText className={"text-sm lg:text-5xl font-leckerli"}>

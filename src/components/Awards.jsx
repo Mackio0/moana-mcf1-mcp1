@@ -3,7 +3,7 @@ import GradientText from "./GradientText";
 
 const Awards = () => {
   return (
-    <div className="bg-commercial bg-no-repeat object-fill object-left-bottom lg:col-span-6 md:px-2 px-1 col-span-full md:mb-10  ">
+    <div className="bg-commercial lg:mb-20 bg-no-repeat object-fill object-left-bottom lg:col-span-6 md:px-2 px-1 col-span-full md:mb-10 mb-5  ">
       <div className=" bg-[rgba(255,255,255,0.6)] flex flex-col gap-3 md:gap-5">
         <GradientText className=" text-2xl md:text-3xl font-leckerli ">
           Awards And nomination

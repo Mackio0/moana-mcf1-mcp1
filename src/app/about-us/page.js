@@ -30,7 +30,7 @@ export default function AboutPage() {
         <LogoSlider
           partners={partners}
         />
-        <div className="  md:mb-5 col-span-full  md:block lg:hidden  ">
+        <div className="  md:mb-10 col-span-full mb-5 md:block lg:hidden  ">
           <Image
             src="/images/moana_about/achievement1.png"
             alt="Picture of the author"
@@ -41,7 +41,7 @@ export default function AboutPage() {
         </div>
 
         <CommercialSuccess />
-        <div className=" hidden lg:block lg:mb-10  lg:col-span-6  ">
+        <div className=" hidden lg:block lg:mb-20  lg:col-span-6  ">
           <Image
             src="/images/moana_about/achievement1.png"
             alt="Picture of the author"
@@ -50,7 +50,7 @@ export default function AboutPage() {
             height={334}
           />
         </div>
-        <div className=" lg:col-span-6 col-span-full  lg:mb-10 md:mb-5   ">
+        <div className=" lg:col-span-6 col-span-full  lg:mb-20 md:mb-10 mb-5  ">
           <Image
             className=" w-full object-cover rounded "
 
@@ -64,7 +64,7 @@ export default function AboutPage() {
         <Awards />
       </Container>
 
-      <div className=" w-screen   md:mb-10 mb-8  ">
+      <div className=" w-screen h-[100px]   md:mb-10 mb-5 lg:mb-20  ">
         <MoanaSailBoat rtl={true} styleName=" w-screen " />
       </div>
 
@@ -76,7 +76,7 @@ export default function AboutPage() {
           Making of the Movie
         </GradientText>
 
-        <div className=" col-span-full lg:mb-section-spacing md:mb-10 mb-8 ">
+        <div className=" col-span-full lg:mb-20 md:mb-10 mb-5">
 
           <SliderComponent bottomControls={false}
             leftRightControls={true} s infinite={false} >
@@ -92,22 +92,22 @@ export default function AboutPage() {
             </div>)}
           </SliderComponent>
         </div>
-        <GradientText className=" lg:text-5xl lg:my-section-spacing text-2xl md:text-3xl md:mb-5 font-subrayada col-span-full  text-center">
+        <GradientText className=" lg:text-5xl  lg:mb-20 text-2xl md:text-3xl md:mb-10 mb-5 font-subrayada col-span-full  text-center">
           Journey Of Moana
         </GradientText>
-        <div className=" lg:col-span-6 min-h-[340px] md:col-span-4 md:mb-10 col-span-full  self-stretch flex items-start justify-center mb-8 ">
+        <div className=" lg:col-span-6 min-h-[340px] md:col-span-4 md:mb-10 lg:mb-20 col-span-full  self-stretch flex items-start justify-center mb-5 ">
 
           <JourneyMap className=" h-full w-full  " />
         </div>
-        <div className="lg:col-span-6 col-span-full md:col-span-4 md:mb-10 mb-8 space-y-2  lg:space-y-5">
+        <div className="lg:col-span-6 col-span-full md:col-span-4 lg:mb-20 md:mb-10 mb-5 space-y-2  lg:space-y-5">
           <CalltoAdventure />
         </div>
 
-        <GradientText className=" lg:my-section-spacing col-span-full mb-5 md:mb-8 lg:text-5xl md:text-4xl text-2xl font-subrayada">
+        <GradientText className=" lg:my-20 col-span-full mb-5 md:mb-8 lg:text-5xl md:text-4xl text-2xl font-subrayada">
           Critics Review
         </GradientText>
 
-        <div className=" col-span-full  md:mb-10 mb-20 ">
+        <div className=" col-span-full lg:mb-20 md:mb-10 mb-5 ">
           <SliderComponent bottomControls={true} leftRightControls={false} >
             <RatingCard className="px-1 mt-24 md:mt-24  sm:mt-14  sm:w-auto " image={character1} title="Victoria Luxford" message="Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery." date="May 4, 2023" rating="4/5" />
             <RatingCard className="px-1 mt-24 md:mt-24  sm:mt-14  sm:w-auto" image={character2} title="Victoria Luxford" message="Great fun. A traditional Disney Princess film but with a little more depth to it, being about personal discovery and bravery." date="May 4, 2023" rating="4/5" />
@@ -119,7 +119,7 @@ export default function AboutPage() {
           </SliderComponent>
         </div>
 
-        <DirectorGroup  />
+        <DirectorGroup />
 
 
 
