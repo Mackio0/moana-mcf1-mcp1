@@ -1,11 +1,8 @@
-
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import "./globals.css";
 import { Leckerli_One, Montserrat_Subrayada, Roboto } from "next/font/google";
-import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
 
 const Leckerli = Leckerli_One({
   weight: "400",
