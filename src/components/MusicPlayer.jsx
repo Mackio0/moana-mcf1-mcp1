@@ -80,7 +80,7 @@ export default function MusicPlayer() {
     setIsPlaying(true);
   };
 
-  console.log(currentSong)
+  // console.log(currentSong)
 
   return (
     <div className="mb-3 lg:mb-0 p-0 lg:p-6">

@@ -18,7 +18,8 @@ const HeroSection = ({ image, title }) => {
           {title}
         </GradientText>
       </div>
-      <div className=" absolute z-20 w-full md:bottom-[-10px] -bottom-6  translate-y-1/4 ">
+
+      <div className=" absolute z-20 w-full bottom-3 md:bottom-7 lg:bottom-[56px] transform translate-y-1/2">
         <MoanaSailBoat />
       </div>
     </div>

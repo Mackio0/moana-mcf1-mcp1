@@ -9,13 +9,13 @@ import MoanaSailBoatRight from "./components/MoanaSailBoatRight";
 
 export default function Page() {
   return (
-    <main className="flex flex-col gap-[40px] ">
+    <main className="flex flex-col">
       <HeroSection image={bgGallery} title={"Gallery"} className />
 
       <Container>
         <GalleryMovieScence />
       </Container>
-      <div className='  z-20 w-full '>
+      <div className='z-20 w-full '>
         <MoanaSailBoatRight />
       </div>
 

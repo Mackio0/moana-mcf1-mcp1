@@ -1,7 +1,11 @@
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-
+import "./globals.css";
 import { Leckerli_One, Montserrat_Subrayada, Roboto } from "next/font/google";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import CTA from "@/components/CTA";
 
 const Leckerli = Leckerli_One({
   weight: "400",
@@ -27,9 +31,10 @@ export default function RootLayout({ children }) {
     >
       <body>
         <main className="flex flex-col min-h-screen">
-          {/* <Header /> */}
+          <Header />
           {children}
-          {/* <Footer /> */}
+          <CTA />
+          <Footer />
         </main>
       </body>
     </html>

@@ -36,7 +36,7 @@ const GalleryFanArt = () => {
     fanArt7,
   ];
   return (
-    <section className="my-6 lg:my-section-spacing">
+    <section className="my-5 lg:my-section-spacing">
       <GradientText
         className={
           "font-subrayada text-2xl md:text-3xl lg:text-5xl mb-3 lg:mb-section-spacing"
