@@ -6,7 +6,7 @@ import MusicPlayer from "./MusicPlayer";
 
 const GalleryOST = () => {
   return (
-    <section className="my-3 lg:my-section-spacing">
+    <section className="my-5 lg:my-section-spacing">
       <GradientText
         className={"font-subrayada text-2xl md:text-3xl lg:text-5xl mb-3"}
       >
