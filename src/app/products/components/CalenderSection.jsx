@@ -5,10 +5,10 @@
 import { Download } from 'lucide-react'
 import Image from 'next/image'
 import ProductButton from './ProductButton'
-import calendar1 from '../../../assets/moana_products/calender/calendar-1.png'
-import calendar2 from '../../../assets/moana_products/calender/calendar-2.png'
+import calendar1 from '../../../../public/assets/moana_products/calender/calendar-1.png'
+import calendar2 from '../../../../public/assets/moana_products/calender/calendar-2.png'
 
-import calendar3 from '../../../assets/moana_products/calender/calendar-3.png'
+import calendar3 from '../../../../public/assets/moana_products/calender/calendar-3.png'
 import { handleDownload } from '../actions/dowloadfile'
 
 export default function CalenderSection() {

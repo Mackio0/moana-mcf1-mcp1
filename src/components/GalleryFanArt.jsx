@@ -1,17 +1,31 @@
 "use client";
 import React from "react";
-import GradientText from "../components/GradientText";
+import GradientText from "@/components/GradientText";
 
-import fanArt1 from "../../assets/moana_gallery/fan_art/fanart-1.png";
-import fanArt2 from "../../assets/moana_gallery/fan_art/fanart-2.png";
-import fanArt3 from "../../assets/moana_gallery/fan_art/fanart-3.png";
-import fanArt4 from "../../assets/moana_gallery/fan_art/fanart-4.png";
-import fanArt5 from "../../assets/moana_gallery/fan_art/fanart-5.png";
-import fanArt6 from "../../assets/moana_gallery/fan_art/fanart-6.png";
-import fanArt7 from "../../assets/moana_gallery/fan_art/fanart-7.png";
+import fanArt1 from "../../public/assets/moana_gallery/fan_art/fanart-1.png";
+import fanArt2 from "../../public/assets/moana_gallery/fan_art/fanart-2.png";
+import fanArt3 from "../../public/assets/moana_gallery/fan_art/fanart-3.png";
+import fanArt4 from "../../public/assets/moana_gallery/fan_art/fanart-4.png";
+import fanArt5 from "../../public/assets/moana_gallery/fan_art/fanart-5.png";
+import fanArt6 from "../../public/assets/moana_gallery/fan_art/fanart-6.png";
+import fanArt7 from "../../public/assets/moana_gallery/fan_art/fanart-7.png";
 import Image from "next/image";
+import SliderComponent from "@/components/SliderComponent";
+import { useEffect, useState } from "react";
 
 const GalleryFanArt = () => {
+  const [isMobileOrTablet, setIsMobileOrTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileOrTablet(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   const fanArts = [
     fanArt1,
     fanArt2,
@@ -22,56 +36,34 @@ const GalleryFanArt = () => {
     fanArt7,
   ];
   return (
-    <section>
-      <GradientText className={"font-subrayada text-5xl mb-section-spacing"}>
+    <section className="my-5 lg:my-section-spacing">
+      <GradientText
+        className={
+          "font-subrayada text-2xl md:text-3xl lg:text-5xl mb-3 lg:mb-section-spacing"
+        }
+      >
         Fan Art Gallery
       </GradientText>
-      {/* <Swiper
-        navigation={true}
-        pagination={{
-          style: "fractions",
-        }}
-        modules={[Navigation, Pagination]}
-        slidesPerView="3"
-        spaceBetween={30}
-        breakpoints={{
-          640: {
-            // Tailwind's sm breakpoint
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            // Tailwind's md breakpoint
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          1024: {
-            // Tailwind's lg breakpoint
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1280: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-        }}
-        className="mySwiper flex justify-center items-center w-full h-full"
+      <SliderComponent
+        leftRightControls={isMobileOrTablet ? false : true}
+        bottomControls={false}
+        dots={true}
+        slideCount={isMobileOrTablet ? 1 : 3}
+        scrollCount={isMobileOrTablet ? 1 : 2}
+        className={"border md:border-none border-primary"}
       >
         {fanArts.map((fanArt, index) => (
-          <SwiperSlide
-            key={index}
-            className="flex justify-center items-center text-center border"
-          >
+          <div key={index} className="p-5">
             <Image
               src={fanArt}
-              alt={`Fan art ${index + 1}`}
-              className="object-contain sm:w-[300px] sm:h-[250px] md:w-[400px] md:h-[3000px] lg:w-[500px] lg:h-[300px] xl:w-[600px] xl:h-[250px]"
+              width="431px"
+              height="333px"
+              alt="Fan Art"
+              className="w-full h-full object-cover"
             />
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper> */}
-
-
+      </SliderComponent>
     </section>
   );
 };

@@ -24,11 +24,11 @@ function Footer() {
             <p className="font-leckerli text-2xl text-center mb-4">Follow Us</p>
             <FollowUsBtnGroup />
           </div>
-          <div className="w-1/2 flex gap-5">
+          <div className="w-3/4 lg:w-1/2 flex gap-5">
             <div className="h-[1px] border border-white w-1/2"></div>
             <div className="h-[1px] border border-white w-1/2"></div>
           </div>
-          <div className="mt-12 w-2/3">
+          <div className="mt-12 w-full lg:w-2/3">
             <div className="w-full flex justify-between items-center">
               {/* <NavbarLinks/> */}
               {navLinks.map((link, index) => (
