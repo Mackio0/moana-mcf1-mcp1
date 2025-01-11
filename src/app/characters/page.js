@@ -1,14 +1,23 @@
-import Container from "../components/Container";
-import GradientText from "../components/GradientText";
+
+import Container from "@/components/Container";
+
+import Characters from "./components/Characters";
+import HeroSection from "./components/HeroSection";
+
+import VoiceActor from "./components/VoiceActor";
+import {  characterData } from "./data/characterData";
+import { actors } from "./data/voiceActors";
 
 export default function Page() {
-    return (
-      <main>
-        <Container>
-          <GradientText className={"font-bold text-6xl font-subrayada"} heading={2}>
-            Characters
-          </GradientText>
+  return <main>
+       <HeroSection/>
+        <Container className={` gap-[80px] flex-col flex justify-center items-center`}>
+       
+         
+          <VoiceActor actors={actors} />
+        
+          <Characters data={{characterData}}/>
         </Container>
       </main>
-    );
-  }
+
+}
