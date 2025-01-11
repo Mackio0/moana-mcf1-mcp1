@@ -1,3 +1,6 @@
+
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 import "./globals.css";
 import { Leckerli_One, Montserrat_Subrayada, Roboto } from "next/font/google";
 import Footer from "@/components/Footer";
@@ -24,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${Leckerli.variable} ${montserrat.variable} ${roboto.variable}`}
+      className={`${Leckerli.variable} ${roboto.variable} ${montserrat.variable} `}
     >
       <body>
         <main className="flex flex-col min-h-screen">

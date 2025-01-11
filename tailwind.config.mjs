@@ -50,7 +50,7 @@ export default {
         },
       },
       backgroundImage: {
-        gallery: "url('/src/assets/moana_gallery/gallery-hero.png')",
+        commercial: "url('/images/moana_about/about-bg.png')",
       },
       spacing: {
         "section-spacing": "40px", // use as className="mb-section-spacing" or "mt-section-spacing"
