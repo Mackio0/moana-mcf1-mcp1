@@ -3,10 +3,9 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const NavbarLinks = () => {
-    const pathname = usePathname();
- 
-
+const NavbarLinks = ({ className = "", menuOpen }) => {
+  const pathname = usePathname();
+  // console.log(className)
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about-us" },
@@ -16,16 +15,17 @@ const NavbarLinks = () => {
   ];
   return (
     <>
-      <ul className="flex w-1/2 justify-between list-none">
+      <ul className={`${className}`}>
         {navLinks.map((link) => (
-          <li key={link.href} className="">
+          <li key={link.href} className="py-4 font-bold">
             <Link
               href={link.href}
-              className={`${
+              onClick={() => menuOpen(false)}
+              className={
                 pathname === link.href
-                  ? "text-primary border-b-2 border-primary"
+                  ? "text-primary lg:border-b-2 sm:border-b-none lg:border-primary"
                   : "hover:text-primary"
-              }`}
+              }
             >
               {link.name}
             </Link>
