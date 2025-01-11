@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 
-const Button = ({ className, children, filled = false }) => {
+const Button = ({ className, children, filled = false, onClick }) => {
   return (
     <button
+      onClick={onClick}
       className={
         filled
           ? `bg-gradient-to-r from-primary to-secondary-500 text-white flex items-center justify-center py-2 px-6 h-[36px] rounded-tr-lg rounded-bl-lg ${className} box-border`

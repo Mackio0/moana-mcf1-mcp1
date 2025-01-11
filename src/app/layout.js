@@ -28,9 +28,9 @@ export default function RootLayout({ children }) {
     <html lang="en"  className={`${Leckerli.variable} ${montserrat.variable} ${roboto.variable}` } >
       <body>
         <main className="flex flex-col min-h-screen">
-          <Header />
+          {/* <Header /> */}
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </main>
       </body>
     </html>
