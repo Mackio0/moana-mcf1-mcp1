@@ -58,7 +58,7 @@ export default function AdventureToy({ slides }) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h1 className="text-[#2B95B6] text-5xl md:text-6xl font-bold tracking-wide">
+              <h1 className="text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 md:text-5xl font-subrayada text-4xl font-bold tracking-wide">
                 MOANA TOYS
               </h1>
               <ProductButton
@@ -74,7 +74,7 @@ export default function AdventureToy({ slides }) {
               alt="Starfish decoration"
               width={40}
               height={40}
-              className="absolute right-[48%] top-[10%]"
+              className="absolute sm:right-[38%] top-[10%] right-[20%] "
               initial={{ rotate: currentSlide * 90 }}
               animate={{ rotate: currentSlide * 90 + 360 }}
               transition={{ duration: 0.5 }}
@@ -89,7 +89,7 @@ export default function AdventureToy({ slides }) {
                 transition={{ duration: 0.5 }}
               >
                 <div className="flex items-center space-x-4">
-                  <h2 className="text-[#5AACCC] text-3xl font-script">
+                  <h2 className=" font-leckerli   italic font-semibold  text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400  text-3xl font-script">
                     {slides[currentSlide].title}
                   </h2>
                 </div>

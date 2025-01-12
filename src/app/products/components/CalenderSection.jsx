@@ -14,20 +14,20 @@ import { handleDownload } from '../actions/dowloadfile'
 export default function CalenderSection() {
   return (
     <div className=" ">
-      <div className="mx-auto max-w-7xl grid gap-[40px] md:grid-cols-12 relative">
+      <div className="mx-auto max-w-7xl md:grid gap-[40px] md:grid-cols-12  flex flex-col relative">
          <Image
                                 src={calendar3.src}
                                 alt="Starfish decoration"
                                
                                 width={150}
                                 height={100}
-                                className="absolute z-30 bottom-0 -right-[30px] "
+                                className="absolute z-30 bottom-0 md:inline-block  hidden -right-[30px] "
                                
                               />
         {/* {new column} */}
         <div></div>
         {/* Left Column - Info Section */}
-        <div className="p-6 bg-white/80 backdrop-blur shadow-xl col-span-4">
+        <div className="p-2 bg-white/80 backdrop-blur shadow-xl col-span-4 md:inline-block hidden">
            <Image
                                 src={calendar2.src}
                                 alt="Starfish decoration"
@@ -37,25 +37,28 @@ export default function CalenderSection() {
                                 className="absolute z-20 -top-[20px] -left-[70px] "
                                
                               />
-        
-                 <Image
+                              
+          
+           <Image
                                 src={calendar1.src}
                                 alt="Starfish decoration"
                                
                                 fill
-                                className="object-cover  "
+                                className="md:object-fit md:w-full  "
                                 priority
                               />
+               
+                 
         </div>
        
 
         {/* Right Column - Planner Section */}
         <div className="space-y-8 col-span-6">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-sky-600 mb-4">
+            <h1 className="text-4xl md:text-5xl font-subrayada font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 mb-4">
             2025 Calendar
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-sky-500 italic mb-6">
+            <h2 className="text-2xl md:text-3xl font-semibold font-leckerli text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 italic mb-6">
             A Year of Courage and Adventure 
             </h2>
             <p className="text-gray-600">
@@ -65,7 +68,7 @@ export default function CalenderSection() {
           </div>
 
           <div>
-            <h3 className="text-2xl md:text-3xl font-semibold text-sky-500 italic mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold font-leckerli text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 italic mb-4">
               Why It&apos;s Special
             </h3>
             <p className="text-gray-600">
@@ -74,6 +77,21 @@ export default function CalenderSection() {
           </div>
         
           <ProductButton icon={<Download size={20} />} filled={true} process={()=>handleDownload("1Dnf49PbsbyEq2oMQViWah8ySD09XhuvAARbz1T-PnxE","moana-weekly-planner")} children={'Download pdf'}/>
+        </div>
+
+        <div className="p-6  w-full backdrop-blur  col-span-12 inline-block  md:hidden">
+           
+        
+                 <Image
+                                src={calendar1.src}
+                                alt="Starfish decoration"
+                               
+                              width={300}
+                              height={400}
+
+                                className="md:object-cover  w-1/2 md:w-full  "
+                                priority
+                              />
         </div>
         {/* {new column} */}
         <div></div>
