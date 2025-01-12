@@ -34,10 +34,10 @@ export default function SelfCare() {
                                        
                                       />
           <div>
-            <h2 className="text-4xl font-bold text-blue-600">
+            <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-subrayada">
               Self-Care
             </h2>
-            <h2 className="text-2xl text-blue-500 italic mt-2">
+            <h2 className="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-leckerli italic mt-2">
             Moana-Inspired Self-Care Checklist
             </h2>
           </div>
@@ -48,7 +48,7 @@ export default function SelfCare() {
             </p>
 
             <div className="space-y-4">
-              <h3 className="text-2xl text-blue-500 font-semibold">
+              <h3 className="text-2xl font-leckerli text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-semibold">
               Tips
               </h3>
               <ul className="space-y-2 text-gray-700">
