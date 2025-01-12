@@ -57,7 +57,6 @@ export default function WeeklyPlanner() {
             filled={true}
             process={() =>
               handleDownload(
-               
                 "1MC2euLlKZl28eGPZRr10HNgiOOD7aPq2caaAMPWNVjw",
                 "moana-weekly-planner"
               )
@@ -79,15 +78,14 @@ export default function WeeklyPlanner() {
           <Image
             src={planner1.src}
             alt="Starfish decoration"
-           fill
-           
-            className="md:object-cover md:inline-block hidden  w-1/2 md:w-full   "
+            width={411}
+            height={580}
+            className=" md:inline-block hidden  w-1/2 md:w-full   "
             priority
           />
           <Image
             src={planner1.src}
             alt="Starfish decoration"
-          
             width={300}
             height={400}
             className="md:object-cover md:hidden inline-block  w-1/2 md:w-full   "
