@@ -57,7 +57,7 @@ const LandingSection = () => {
             />
           </div>
 
-          <div className="flex flex-col-reverse md:flex-rowc items-start md:justify-between lg:justify-around">
+          <div className="flex flex-col-reverse md:flex-row items-start md:justify-between lg:justify-around">
             {/* Movie Info */}
             <div className="w-full lg:w-auto">
               <GradientText className="text-5xl font-bold text-sky-600 mb-6 font-subrayada">
