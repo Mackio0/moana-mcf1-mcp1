@@ -1,4 +1,3 @@
-
 'use client'
 
 import { ArrowLeft, ArrowRight } from 'lucide-react'
@@ -25,7 +24,6 @@ export default function Characters({ data }) {
 
   return (
     <motion.main
-     
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -35,13 +33,12 @@ export default function Characters({ data }) {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      className="grid grid-cols-7 gap-8 h-[500px] mb-[80px] px-20 py-5"
+      className="grid grid-cols-1 md:grid-cols-7 gap-4 md:gap-8 min-h-[500px] mb-[40px] md:mb-[80px] px-3 md:px-5 py-5"
     >
-      <div className="col-span-1"></div>
+      <div className="hidden lg:block lg:col-span-1"></div>
       <AnimatePresence mode="wait">
         <motion.div
-         
-          className="col-span-2 relative flex justify-center items-center"
+          className="col-span-1 md:col-span-2 relative flex justify-center items-center"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.9, opacity: 0 }}
@@ -53,13 +50,13 @@ export default function Characters({ data }) {
             width={100}
             height={400}
             className={`object-contain p-4 transform transition-all duration-700 ease-in-out scale-110 ${
-              name === "Maui" ? "w-3/4" : "w-1/2"
-            } ${name === "Pua" ? "w-3/4" : "w-1/2"}`}
+              name === "Maui" ? "w-1/2 md:w-3/4" : "w-1/3 md:w-1/2"
+            } ${name === "Pua" ? "w-1/2 md:w-3/4" : "w-1/3 md:w-1/2"}`}
           />
           <motion.img
             src={UnderWave.src}
             alt="Under Wave"
-            className="p-4 absolute w-1/2 top-[70%]"
+            className="p-4 absolute w-1/3 md:w-1/2 lg:top-[70%] top-[60%] md:inline-block hidden"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -67,7 +64,7 @@ export default function Characters({ data }) {
           <motion.img
             src={Sun.src}
             alt="Sun"
-            className="p-4 absolute w-[80px] top-0 -left-[0%]"
+            className="p-4 absolute w-[40px] md:w-[80px] top-0 -left-[0%]"
             initial={{ rotate: currentSlide * 90 }}
             animate={{ rotate: currentSlide * 90 + 360 }}
             transition={{ duration: 0.5 }}
@@ -77,17 +74,16 @@ export default function Characters({ data }) {
 
       <AnimatePresence mode="wait">
         <motion.div
-         
-          className="col-span-4 flex justify-between flex-col gap-4 mx-auto p-6 space-y-6 min-h-[412px] "
+          className="col-span-1 md:col-span-4 flex justify-between flex-col gap-4 mx-auto p-2 lg:p-6 space-y-4 md:space-y-6 min-h-[300px] md:min-h-[412px]"
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: 50, opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="w-full ">
+          <div className="w-full">
             <motion.h1
-             key={`${currentSlide}`}
-              className="text-5xl font-bold text-sky-600 tracking-wide"
+              key={`${currentSlide}`}
+              className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-subrayada font-bold tracking-wide"
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -95,8 +91,8 @@ export default function Characters({ data }) {
               {name}
             </motion.h1>
             <motion.p
-             key={`content-${currentSlide}`}
-              className="text-gray-700 leading-relaxed"
+              key={`content-${currentSlide}`}
+              className="text-sm md:text-base text-gray-700 leading-relaxed"
               initial={{ y: 10, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -105,8 +101,8 @@ export default function Characters({ data }) {
             </motion.p>
 
             <motion.div
-             key={`type-${currentSlide}`}
-              className="grid grid-cols-3 gap-4 mt-6"
+              key={`type-${currentSlide}`}
+              className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mt-4 md:mt-6"
               initial="hidden"
               animate="visible"
               variants={{
@@ -117,30 +113,30 @@ export default function Characters({ data }) {
               {attributes.map((attr, index) => (
                 <motion.div
                   key={index}
-                  className="space-y-2"
+                  className="space-y-1 md:space-y-2"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.4 }}
                 >
-                  <h2 className="text-xl font-semibold text-gray-900">{attr.label}</h2>
-                  <p className="text-gray-700">{attr.value}</p>
+                  <h2 className="text-base md:text-xl font-semibold text-gray-900">{attr.label}</h2>
+                  <p className="text-sm md:text-base text-gray-700">{attr.value}</p>
                 </motion.div>
               ))}
             </motion.div>
           </div>
 
           <motion.div
-            className="flex justify-center items-center gap-4 mt-auto"
+            className="flex justify-center items-center gap-2 md:gap-4 mt-auto"
             initial={{ scale: 0.9 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <CharacterButton process={PrevCharacter} children="Prev" iconLeft={<ArrowLeft className="ml-2 h-4 w-4" />} />
-            <CharacterButton process={NextCharacter} children="Next" icon={<ArrowRight className="ml-2 h-4 w-4" />} />
+            <CharacterButton process={PrevCharacter} children="Prev" iconLeft={<ArrowLeft className="ml-2 h-3 w-3 md:h-4 md:w-4" />} />
+            <CharacterButton process={NextCharacter} children="Next" icon={<ArrowRight className="ml-2 h-3 w-3 md:h-4 md:w-4" />} />
           </motion.div>
         </motion.div>
       </AnimatePresence>
     </motion.main>
-    
   );
 }
+

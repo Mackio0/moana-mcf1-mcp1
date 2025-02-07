@@ -19,17 +19,17 @@ export default function WeeklyPlanner() {
           alt="Starfish decoration"
           width={150}
           height={100}
-          className="absolute z-30 bottom-0 -left-[30px] "
+          className="md:absolute md:inline-block  hidden z-30 bottom-0 -left-[30px] "
         />
         {/* {new column} */}
-        <div></div>
+        <div className=" hidden md:inline-block"></div>
         {/* Left Column - Info Section */}
-        <div className="space-y-8 col-span-6">
+        <div className="space-y-8 col-span-1 md:col-span-6 p-2">
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold text-sky-600 mb-4">
+            <h1 className="text-4xl md:text-5xl font-subrayada font-bold text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 mb-4">
               WEEKLY PLANNER
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-sky-500 italic mb-6">
+            <h2 className="text-2xl md:text-3xl  text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-leckerli font-semibold italic mb-6">
               Your Week with Adventure
             </h2>
             <p className="text-gray-600">
@@ -41,7 +41,7 @@ export default function WeeklyPlanner() {
           </div>
 
           <div>
-            <h3 className="text-2xl md:text-3xl font-semibold text-sky-500 italic mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-primary-400 to-secondary-400 font-leckerli italic mb-4">
               Why It&apos;s Special
             </h3>
             <p className="text-gray-600">
@@ -66,25 +66,34 @@ export default function WeeklyPlanner() {
         </div>
 
         {/* Right Column - Planner Section */}
-        <div className=" bg-white/80 backdrop-blur shadow-xl col-span-4">
+        <div className=" backdrop-blur col-span-1 md:col-span-4">
           <Image
             src={planner2.src}
             alt="Starfish decoration"
             width={150}
             height={100}
-            className="absolute z-20 -top-[80px] -right-[70px] "
+            className="absolute md:absolute md:inline-block  hidden z-20 -top-[80px] -right-[70px] "
           />
 
           <Image
             src={planner1.src}
             alt="Starfish decoration"
-            fill
-            className="object-cover  "
+            width={411}
+            height={580}
+            className=" md:inline-block hidden  w-1/2 md:w-full   "
+            priority
+          />
+          <Image
+            src={planner1.src}
+            alt="Starfish decoration"
+            width={300}
+            height={400}
+            className="md:object-cover md:hidden inline-block  w-1/2 md:w-full   "
             priority
           />
         </div>
         {/* {new column} */}
-        <div></div>
+        <div className=" hidden md:inline-block"></div>
       </div>
     </div>
   );

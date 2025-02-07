@@ -9,7 +9,7 @@ const VoiceActor = ({actors}) => {
        <GradientText className={"font-bold text-3xl font-subrayada mb-[20px] text-center"} heading={2}>
            Voice Actors
           </GradientText>
-      <div className=' w-full grid-cols-3 grid gap-20'>
+      <div className=' w-full md:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid gap-20'>
         {actors.map((actor, index)=>
        (
         <div key={index} className='  flex flex-col gap-2 justify-center items-center '>
