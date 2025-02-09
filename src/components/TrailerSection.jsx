@@ -51,25 +51,16 @@ const TrailerSection = () => {
             {/* Left Video */}
             <div className="w-full">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <Image
-                  src="/assets/moana_home/trailer.png"
-                  alt="Ocean scene"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/10" />
-                <button className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
-                    <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
-                      <svg
-                        className="w-4 h-4 text-sky-500 translate-x-0.5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path fill="currentColor" d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/LKFuXETZUsI?si=JLZ3JJTkelc9Sp7l"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
 
@@ -91,39 +82,33 @@ const TrailerSection = () => {
           <div className="hidden md:block md:h-[400px]">
             {/* Left Video */}
             <div className="absolute left-8 lg:left-40 top-[70%] -translate-y-1/2 w-[280px] lg:w-[360px]">
-              <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <Image
-                  src="/assets/moana_home/trailer.png"
-                  alt="Ocean scene"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/10" />
-                <button className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-12 h-12 rounded-full bg-white/30 flex items-center justify-center">
-                    <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center">
-                      <svg
-                        className="w-4 h-4 text-sky-500 translate-x-0.5"
-                        viewBox="0 0 24 24"
-                      >
-                        <path fill="currentColor" d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
+              <div className="relative aspect-[4/3] rounded-lg overflow-hidden object-cover">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/LKFuXETZUsI?si=JLZ3JJTkelc9Sp7l"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
 
             {/* Right Video */}
             <div className="absolute right-8 lg:right-40 top-[40%] w-[300px] lg:w-[400px]">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
-                <Image
-                  src="/assets/moana_home/boat.png"
-                  alt="Boat scene"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/10" />
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/hDZ7y8RP5HE?si=1ZDAjX-ItClEYxEJ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
             </div>
 
